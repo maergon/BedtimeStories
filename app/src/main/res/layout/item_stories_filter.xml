@@ -14,22 +14,22 @@
 
     <ImageButton
         android:id="@+id/iv"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
         android:background="@drawable/btn_stories_filter"
-        android:src="@drawable/ic_android_black_24dp" />
+        android:src="@drawable/ic_all" />
 
 
     <TextView
         android:id="@+id/greeting_tv1"
-        android:layout_width="100dp"
+        android:layout_width="80dp"
         android:layout_height="30dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:gravity="center"
         android:textColor="@color/white"
-        android:textSize="20dp" />
+        android:textSize="14sp" />
 
 </LinearLayout>

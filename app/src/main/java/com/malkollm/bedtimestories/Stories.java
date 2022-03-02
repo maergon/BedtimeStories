@@ -12,8 +12,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class Stories extends AppCompatActivity {
-    private final String[] brands = {"apple", "blackberry", "Nokia", "samsung",
-            "windows", "infinix", "lenovo", "HTC"};
+    private final String[] brands = {"Все", "Избранное", "Веселые", "Добрые",
+            "Пираты", "Фантастика"};
     private final int[] images = {R.color.white, R.color.purple_200,
             R.color.purple_500, R.color.black, R.color.purple_700,
             R.color.teal_200, R.color.teal_700, R.color.white};
