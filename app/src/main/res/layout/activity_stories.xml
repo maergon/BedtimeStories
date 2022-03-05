@@ -55,27 +55,30 @@
         android:layout_height="200dp"
         android:layout_below="@+id/svCategories"
         android:layout_centerInParent="true"
-        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/view_pinned"
         android:orientation="vertical">
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_pin"
-            android:background="@null"
             android:layout_margin="5dp"
-            android:padding="5dp" />
+            android:background="@null"
+            android:padding="5dp"
+            android:src="@drawable/ic_pin" />
 
         <TextView
             android:id="@+id/tvTitlePinned"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
             android:text="Название сказки"
             android:textColor="@color/white"
             android:textSize="27sp"
-            android:layout_marginTop="30dp"
             android:textStyle="bold" />
 
         <TextView
@@ -83,25 +86,33 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tvTitlePinned"
+            android:layout_centerHorizontal="true"
             android:text="Каждый ребёнок полюбит эту простую и милую традицию, когда родители читают ему перед сном"
             android:textAlignment="center"
-            android:layout_centerHorizontal="true"
             android:textColor="@color/white"
             android:textSize="12sp" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDescPinned"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
             android:background="@drawable/btn_get_started_read"
             android:text="Начать"
             android:textColor="#000000"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="35dp"
-            android:layout_below="@+id/tvDescPinned"
             android:textStyle="bold" />
 
-
     </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvStories"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlPinned"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"/>
 
 
 </RelativeLayout>

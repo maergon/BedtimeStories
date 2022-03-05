@@ -6,10 +6,12 @@
         <entry key="app/src/main/res/drawable/btn_get_started.xml" value="0.1445" />
         <entry key="app/src/main/res/drawable/btn_get_started_read.xml" value="0.1425" />
         <entry key="app/src/main/res/drawable/btn_stories_filter.xml" value="0.105" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.137" />
         <entry key="app/src/main/res/drawable/view_pinned.xml" value="0.105" />
         <entry key="app/src/main/res/drawable/view_rectangle_pinned.xml" value="0.105" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.21668243408203128" />
         <entry key="app/src/main/res/layout/activity_stories.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/item_stories.xml" value="0.30512820512820515" />
         <entry key="app/src/main/res/layout/item_stories_filter.xml" value="0.30512820512820515" />
       </map>
     </option>

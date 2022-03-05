@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "372205357587",
+    "project_id": "bedtimestories-29630",
+    "storage_bucket": "bedtimestories-29630.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:372205357587:android:2bdf8c96d852df1d93cde6",
+        "android_client_info": {
+          "package_name": "com.malkollm.bedtimestories"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "372205357587-vqvskvpko1th4lo098bbnfv00fje1bra.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxCOjOKGo_HzK_22pKq-i3Sj-KKQhxcHU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "372205357587-vqvskvpko1th4lo098bbnfv00fje1bra.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

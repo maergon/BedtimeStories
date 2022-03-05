@@ -1,6 +1,8 @@
 package com.malkollm.bedtimestories;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,6 +13,9 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class Stories extends AppCompatActivity {
     private final String[] brands = {"Все", "Избранное", "Веселые", "Добрые",
             "Пираты", "Фантастика"};
@@ -18,10 +23,39 @@ public class Stories extends AppCompatActivity {
             R.color.purple_500, R.color.black, R.color.purple_700,
             R.color.teal_200, R.color.teal_700, R.color.white};
 
+    RecyclerView recyclerView;
+    StoryAdapter storyAdapter;
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        storyAdapter.startListening();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        storyAdapter.stopListening();
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stories);
+
+        recyclerView = (RecyclerView) findViewById(R.id.rvStories);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        FirebaseRecyclerOptions<StoryModel> options =
+                new FirebaseRecyclerOptions.Builder<StoryModel>()
+                .setQuery(FirebaseDatabase.getInstance().getReference().child("stories"), StoryModel.class)
+                .build();
+
+        storyAdapter = new StoryAdapter(options);
+        recyclerView.setAdapter(storyAdapter);
+
+
+
 
         LinearLayout linearLayout = findViewById(R.id.linear1);
         LayoutInflater layoutInflater = LayoutInflater.from(this);
